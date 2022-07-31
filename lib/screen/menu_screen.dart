@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_learning/config/router.dart';
+import 'package:go_router/go_router.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({
@@ -11,15 +13,19 @@ class MenuScreen extends StatelessWidget {
       body: SafeArea(
         child: ListView(
           children: [
-            Wrap(
-              alignment: WrapAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {},
-                  child: Text('a'),
+            for (final route in AppRouter.routes)
+              if (route.name != AppRouter.menu.name)
+                Wrap(
+                  alignment: WrapAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        context.pushNamed(route.name ?? '');
+                      },
+                      child: Text(route.name ?? ''),
+                    ),
+                  ],
                 ),
-              ],
-            ),
           ],
         ),
       ),
