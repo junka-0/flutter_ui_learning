@@ -1,5 +1,5 @@
-import 'package:flutter_ui_learning/screen/bounce_animation_screen.dart';
-import 'package:flutter_ui_learning/screen/menu_screen.dart';
+import 'package:flutter_ui_learning/studies/bounce_animation/bounce_animation_screen.dart';
+import 'package:flutter_ui_learning/studies/menu_screen.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_learning/component/bounce_rect_painter.dart';
+import 'package:flutter_ui_learning/studies/bounce_animation/component/bounce_rect_painter.dart';
 
 class BounceAnimationScreen extends StatefulWidget {
   const BounceAnimationScreen({
