@@ -29,7 +29,7 @@ class BounceRectPainter extends CustomPainter {
 
   final double controllerValue;
   final Path path = createPath();
-  final myPaint = Paint()..color = const Color(0xFF6581CA);
+  final myPaint = Paint()..color = Colors.blue;
 
   @override
   void paint(Canvas canvas, Size size) {
